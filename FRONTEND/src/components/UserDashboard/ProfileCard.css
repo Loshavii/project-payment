@@ -1,0 +1,59 @@
+/* Container for the profile cards */
+.unique-profile-cards-container {
+    display: flex;                        /* Use flexbox for layout */
+    flex-wrap: wrap;                     /* Allow wrapping of cards */
+    gap: 20px;                           /* Space between cards */
+    padding: 20px;                       /* Padding around the container */
+    justify-content: center;              /* Center the cards in the container */
+    background-color: #222629;           /* Background color of the container */
+  }
+  
+  /* Individual profile card styling */
+  .unique-profile-card {
+    border: 1px solid #ccc;               /* Light gray border around the card */
+    border-radius: 8px;                   /* Rounded corners */
+    padding: 15px;                        /* Padding inside the card */
+    background-color: #ffffff;            /* White background for the card */
+    width: 280px;                         /* Fixed width for cards */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.2s;           /* Animation on hover */
+  }
+  
+  /* Card hover effect */
+  .unique-profile-card:hover {
+    transform: scale(1.02);              /* Slightly enlarge card on hover */
+  }
+  
+  /* Header for the profile name */
+  .unique-profile-name {
+    font-size: 22px;                      /* Font size for the name */
+    margin-bottom: 10px;                  /* Space below the name */
+    color: #333;                          /* Dark gray color for the name */
+  }
+  
+  /* Paragraph styling for profile details */
+  .unique-profile-detail {
+    margin: 5px 0;                        /* Space above and below each paragraph */
+    color: #555;                          /* Medium gray color for text */
+    font-size: 14px;                      /* Standard font size */
+  }
+  
+  /* Styling for status */
+  .unique-profile-status {
+    font-weight: bold;                    /* Bold font for the status */
+  }
+  
+  /* Styling for dates */
+  .unique-profile-date {
+    font-size: 12px;                      /* Smaller font size for dates */
+    color: #777;                          /* Lighter gray color for dates */
+  }
+  
+  /* Styling for empty state message */
+  .unique-no-profiles {
+    font-size: 18px;                      /* Larger font size for the message */
+    color: #f86c6b;                       /* Red color for emphasis */
+    text-align: center;                   /* Center the message */
+    width: 100%;                          /* Full width for message */
+  }
+  

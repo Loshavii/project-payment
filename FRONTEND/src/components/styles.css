@@ -1,0 +1,208 @@
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideInLeft {
+    from { transform: translateX(-100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideInRight {
+    from { transform: translateX(100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #222629 !important;
+    color: #fff;
+    font-size: 15px !important;
+}
+
+
+.container {
+    display: flex;
+    color: #fff;
+    border-radius: 30px;
+    overflow: hidden;
+    max-width: 1700px;
+    width: 1000px !important;
+    height: 650px !important;
+    animation: fadeIn 1s ease-in-out;
+
+}
+
+.left-side {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f9f9f9;
+    width: 50%;
+    border-radius: 40px 0 0 40px;
+    animation: slideInLeft 1s ease-in-out;
+
+}
+
+.logo {
+    max-width: 150px;
+    margin-bottom: 8px;
+    position: absolute;
+    top: 4px;
+    left: 215px;
+    animation: pulse 2s infinite;
+
+}
+
+.illustration {
+    max-width: 300px;
+    animation: slideInRight 1s ease-in-out;
+
+}
+
+.right-side {
+    padding: 40px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(71, 75, 71, 0.5);
+    border-radius: 0 40px 40px 0; 
+    animation: fadeIn 1.5s ease-in-out;
+
+}
+
+h2 {
+    font-size: 24px;
+    margin-top: 20px !important;
+    margin-bottom: 20px;
+    font-weight: 500;
+    animation: fadeIn 1s ease-in-out;
+
+}
+
+
+.input-group {
+    margin-bottom: 15px;
+    animation: fadeIn 1.2s ease-in-out;
+
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    width: 100%;
+    color: #fff;
+}
+
+.input-icon {
+    position: relative;
+}
+
+.input-icon input {
+    padding-left: 35px;
+    padding: 10px 145px 10px 35px !important;
+    border-radius: 5px;
+    border: 1px solid #333;
+    background-color: #6b6e70;
+    color: #fff;
+    transition: background-color 0.3s ease;
+
+}
+
+.input-icon i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #b7ff00;
+    animation: fadeIn 1.4s ease-in-out;
+
+}
+
+.password-container {
+    position: relative;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    animation: fadeIn 1.6s ease-in-out;
+
+}
+
+.checkbox-group {
+    margin-bottom: 15px;
+    animation: fadeIn 1.8s ease-in-out;
+
+}
+
+.checkbox-group label {
+    font-size: 17px;
+}
+
+.checkbox-group input {
+    margin-right: 10px;
+}
+.checkbox-group a {
+    color: #b7ff00;
+}
+.checkbox-group input[type="checkbox"] {
+    accent-color: #b7ff00;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px !important;
+    background-color: rgba(183, 255, 0, 0.7) !important;
+    border: none;
+    border-radius: 5px;
+    color: #fff !important;
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s ease;
+    animation: fadeIn 2s ease-in-out;}
+
+.btn:hover {
+    background-color: #b7ff00 !important;
+    transform: scale(1.05);
+
+}
+
+.signin-link,
+.signup-link {
+    margin-top: 15px;
+    font-size: 17px;
+    animation: fadeIn 2.2s ease-in-out;
+
+}
+
+.signin-link a,
+.signup-link a {
+    color: #b7ff00 ;
+    text-decoration: none;
+}
+
+.signin-link a:hover,
+.signup-link a:hover {
+    text-decoration: underline;
+}

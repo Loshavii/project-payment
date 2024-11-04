@@ -1,0 +1,242 @@
+/* 
+   .profile-form {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #d3d3d3;
+    border-radius: 10px;
+    background-color: #181818;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    box-shadow: 0px 10px 20px rgba(109, 107, 107, 0.5),
+              0px 6px 6px rgba(209, 208, 209, 0.2);
+  }
+  
+  .form-title {
+    grid-column: span 2;
+    margin-bottom: 15px;
+    color: #b3ff00 ;
+    text-align: center;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #d3d3d3 ;
+  }
+  
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #d3d3d3;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+
+   .button-group {
+    grid-column: span 2;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .button-group button {
+    padding: 10px 20px;
+    background-color: #4d4b4b; 
+    color: #0d0d0d; 
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 48%;
+    transition: background-color 0.3s, transform 0.3s;
+
+  }
+  
+  .button-group button.update-button {
+    background-color: #4d4b4b; 
+  }
+  
+  .button-group button:hover {
+    background-color: #d3d3d3; 
+    color: #0d0d0d; 
+    transform: scale(1.05);
+  }
+
+  .welcome-note {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #b3ff00;
+    margin-bottom: 20px;
+  }
+   */
+
+   .profile-form {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #d3d3d3;
+    border-radius: 10px;
+    background-color: #181818;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    box-shadow: 0px 10px 20px rgba(109, 107, 107, 0.5),
+              0px 6px 6px rgba(209, 208, 209, 0.2);
+  }
+  
+  .form-title {
+    grid-column: span 2;
+    margin-bottom: 15px;
+    color: #b3ff00;
+    text-align: center;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #d3d3d3;
+  }
+  
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #d3d3d3;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  .contact-options {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .contact-options label {
+    font-weight: normal;
+    color: #d3d3d3;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .contact-options input[type="radio"] {
+    margin-right: 5px;
+  }
+  
+  .button-group {
+    grid-column: span 2;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .button-group button {
+    padding: 10px 20px;
+    background-color: #4d4b4b;
+    color: #0d0d0d;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 48%;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .button-group button:hover {
+    background-color: #d3d3d3;
+    color: #0d0d0d;
+    transform: scale(1.05);
+  }
+  
+  .welcome-note {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #b3ff00;
+    margin-bottom: 20px;
+  }
+  
+
+  .contact-options-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #222629; /* Your background color */
+    color: white; /* For text */
+  }
+  
+  .form-title {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #86c232; /* Your button color for headings */
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-label {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    display: block;
+    color: white;
+  }
+  
+  .contact-options {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between the options */
+  }
+  
+  .contact-option {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .contact-option input[type="radio"] {
+    display: none;
+  }
+  
+  .contact-option .option-label {
+    font-size: 1.1rem;
+    padding: 10px;
+    border-radius: 6px;
+    border: 2px solid #6b6e70;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+  }
+  
+  .contact-option input[type="radio"]:checked + .option-label {
+    background-color: #86c232; /* Button color when selected */
+    color: #222629; /* Text color on selection */
+    border-color: #86c232;
+  }
+  
+  .contact-option:hover .option-label {
+    background-color: #333;
+    border-color: #86c232;
+  }
+  

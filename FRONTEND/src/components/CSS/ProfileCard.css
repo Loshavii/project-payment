@@ -1,0 +1,249 @@
+/* 
+.profile-card {
+    max-width: 500px;
+    margin: 2rem auto; 
+    padding: 1.5rem;
+    background-color: #f9f9f9; 
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  .profile-card h2, 
+  .profile-card h3 {
+    text-align: center; 
+    color: #444;
+    margin-bottom: 1rem;
+  }
+  
+  .profile-card p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  .profile-card p strong {
+    font-weight: 600; 
+  }
+  
+  .profile-card .error-message {
+    color: red;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .profile-name {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #222;
+  }
+  
+  .profile-card h3 {
+    margin-top: 1.5rem;
+    font-size: 1.25rem;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 0.5rem;
+  }
+  
+  .profile-card .profile-row {
+    margin-bottom: 1rem;
+  }
+  
+  .profile-card .profile-row strong {
+    display: block; 
+    font-size: 1.05rem;
+    color: #555;
+  }
+  
+  .profile-card .profile-row span {
+    display: block; 
+    font-size: 1rem;
+    color: #333;
+    margin-top: 0.25rem;
+  }
+  
+  @media (max-width: 600px) {
+    .profile-card {
+      padding: 1rem;
+    }
+  
+    .profile-card p {
+      font-size: 0.95rem;
+    }
+  }
+   */
+
+   /* ProfileCard.css */
+/* ProfileCard.css */
+
+/* .profile-card {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.profile-name {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.profile-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 5px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.profile-row strong {
+  flex: 0 0 40%;
+  font-weight: bold;
+  color: #555;
+}
+
+.profile-row span {
+  flex: 0 0 60%;
+  color: #333;
+}
+
+h3 {
+  font-size: 18px;
+  color: #444;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+}
+
+.error-message {
+  color: #d9534f;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 600px) {
+  .profile-card {
+    padding: 15px;
+  }
+
+  .profile-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .profile-row strong,
+  .profile-row span {
+    flex: 0 0 100%;
+  }
+
+  .profile-row strong {
+    margin-bottom: 5px;
+  }
+} */
+
+
+/* ProfileCard.css */
+
+.profile-card {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  display: flex;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+.profile-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.profile-name {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.profile-tagline {
+  font-size: 1rem;
+  color: #666;
+}
+
+.profile-section {
+  margin-bottom: 2rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+  color: #0066cc;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.profile-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.profile-item {
+  background-color: #f9f9f9;
+  padding: 1rem;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.profile-item:hover {
+  background-color: #f0f0f0;
+}
+
+.profile-item strong {
+  display: block;
+  font-weight: bold;
+  color: #444;
+  margin-bottom: 0.5rem;
+}
+
+.profile-item span {
+  color: #666;
+}
+
+.error-message {
+  color: #d9534f;
+  text-align: center;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  background-color: #f8d7da;
+  border-radius: 4px;
+}
+
+.loading {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #666;
+  margin-top: 2rem;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .profile-card {
+    padding: 1rem;
+  }
+
+  .profile-grid {
+    grid-template-columns: 1fr;
+  }
+}
