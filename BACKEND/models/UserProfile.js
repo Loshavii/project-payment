@@ -22,8 +22,9 @@ const ProfileSchema = new Schema({
   bloodSugarLevels: { type: String },
   contactOption: { type: String, enum: ['chat', 'video'], required: true },
   coachEmail: { type: String, required: true },
-  status: { type: String, enum: ['pending', 'approved', 'declined'], default: 'pending' }
+  status: { type: String, enum: ['pending', 'approved', 'declined'], default: 'pending' },
+  paymentStatus: { type: String, enum: ['Pending', 'Succeeded', 'Failed'], default: 'Pending' } // New paymentStatus field
 }, { timestamps: true });
 
 const Profile = mongoose.model('Profile', ProfileSchema);
-module.exports = Profile; // Change export to CommonJS
+module.exports = Profile;

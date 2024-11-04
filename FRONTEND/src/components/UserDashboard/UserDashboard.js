@@ -82,6 +82,19 @@ const CoachDashboard = () => {
             </>
           )}
         </div>
+        {/* Payment Status Section */}
+        <div className="payment-status-section">
+          <h4>Payment Status:</h4>
+          <p className={`payment-status ${paymentStatus.toLowerCase()}`}>
+            {paymentStatus === 'succeeded'
+              ? 'Payment completed successfully'
+              : paymentStatus === 'pending'
+              ? 'Payment is pending'
+              : paymentStatus === 'failed'
+              ? 'Payment failed'
+              : 'No payment made'}
+          </p>
+        </div>
       </aside>
       <main className="main-content">
         <header className="dashboard-header">
