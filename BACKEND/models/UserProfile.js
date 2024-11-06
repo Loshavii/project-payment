@@ -23,7 +23,7 @@ const ProfileSchema = new Schema({
   contactOption: { type: String, enum: ['chat', 'video'], required: true },
   coachEmail: { type: String, required: true },
   status: { type: String, enum: ['pending', 'approved', 'declined'], default: 'pending' },
-  paymentStatus: { type: String, enum: ['Pending', 'Succeeded', 'Failed'], default: 'Pending' } // New paymentStatus field
+  paymentStatus: { type: String, enum: ['Paid', 'Notpaid'], default: 'Notpaid' } // New paymentStatus field
 }, { timestamps: true });
 
 const Profile = mongoose.model('Profile', ProfileSchema);
